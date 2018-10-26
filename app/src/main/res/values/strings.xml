@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Security</string>
+    <string name="scan">SCAN</string>
+    <string name="fetched_data">FETCHED_DATA</string>
+    <string name="profile">PROFILE</string>
+    <string name="fetch">FETCH</string>
+</resources>

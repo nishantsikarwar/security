@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/scan"
+       android:text="@string/scan"
+       android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_fetch"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scan"
+        android:padding="10sp"
+        android:text="@string/fetch"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scan_text"
+        android:layout_below="@id/button_fetch"
+        android:layout_centerHorizontal="true"
+        android:padding="10sp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fetched_data"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scan_text"
+        android:hint="@string/fetched_data"
+        android:padding="10sp"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/users"
+        android:layout_below="@id/fetched_data"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_light"
+        android:hint="USERS_MEDIA"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/users"
+        android:contentDescription="@string/profile"/>
+
+</RelativeLayout>
